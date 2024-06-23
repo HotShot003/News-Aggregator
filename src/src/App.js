@@ -1,21 +1,29 @@
-import React from 'react';
 import './App.css';
-import Dashboard from './container/Dashboard';
+import Navbar from '../src/container/Navbar';
+import Content from '../src/container/Content'; 
+import Dashboard from '../src/container/Dashboard';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Footer from '../src/container/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My React News App</h1>
-      </header>
-      <main>
-        <Dashboard />
-      </main>
-      {/* <footer>
-        <p>Footer content here</p>
-      </footer> */}
+      <div className="container">
+        <Navbar />
+        <hr className="hr-custom"/>
+        <div className="main-container">
+          <aside className="sidebar">
+            <Content />
+          </aside>
+          <main className="main-content">
+            <Dashboard />
+          </main>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
 
 export default App;
+

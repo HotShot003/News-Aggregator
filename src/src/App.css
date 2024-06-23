@@ -1,19 +1,31 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
 }
 
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+.main-container {
+  display: flex;
+  flex: 1; 
 }
 
-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
+.main-content {
+  flex: 1; 
+}    
+
+.sidebar {
+  width: 18%;
+  height: 100%;
+  background-color: white; 
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1); 
+  flex: 0 0 250px;
+}
+
+.hr-custom {
+  border: 1.5px solid gray;
   width: 100%;
-  text-align: center;
+}
+
+.footer {
+  margin-top: auto; 
 }
