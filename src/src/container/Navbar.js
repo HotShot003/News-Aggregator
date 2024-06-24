@@ -5,26 +5,18 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Navbar = () => {
     return (
-        <div>
-            <nav className="py-4 bg-[#ffffff] flex items-center justify-between">
-                <img src={logo} alt="Logo" className="w-44 h-14 ml-4 mt-2"/>
-                <div className="relative ml-96">
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        className="p-2 pl-14 pt-1 rounded"
-                        style={{ height: '35px', width: '500px', border: '1px solid gray', boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.1)' }}
-                    />
-                    <i className="bi bi-search absolute left-2 -top-1 p-2"></i>
+        <nav className="py-4 bg-white flex items-center justify-between px-4 sm:px-8">
+            <img src={logo} alt="Logo" className="w-32 h-auto sm:w-44 sm:h-14 ml-2"/>
+            <div className="flex-1 mx-4 sm:mx-8 text-center">
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">NewsHive</h1>
+            </div>
+            <div className="mr-2 sm:mr-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-gray-300">
+                    <img src={profileImage} alt="Profile" className="w-full h-full object-cover"/>
                 </div>
-                <div className="mr-10">
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray">
-                        <img src={profileImage} alt="Profile" className="w-full h-full object-cover"/>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    )
+            </div>
+        </nav>
+    );
 }
 
 export default Navbar;
