@@ -1,16 +1,15 @@
 import './App.css';
-import Navbar from '../src/container/Navbar';
-import Content from '../src/container/Content'; 
-import Dashboard from '../src/container/Dashboard';
+import Navbar from './container/Navbar';
+import Content from './container/Content'; 
+import Dashboard from './container/Dashboard';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Footer from '../src/container/Footer';
+import Footer from './container/Footer';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div className="container">
-        <Navbar />
-        <hr className="hr-custom"/>
         <div className="main-container">
           <aside className="sidebar">
             <Content />
@@ -19,8 +18,8 @@ function App() {
             <Dashboard />
           </main>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

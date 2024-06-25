@@ -5,7 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import defaultImage from '../news-notdefined.jpeg';
 
-const apiKey = '069a50da2b704458a6fe9d99370de464';
+// const apiKey = '2dc470f354b04f61805a32777ff604b6';  //Anurag Api Key
+const apiKey = 'f81f4118de804985bce1e1bb2dde5984';
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('general');
