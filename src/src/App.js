@@ -1,9 +1,11 @@
 import './App.css';
+import React from 'react';
 import Navbar from './container/Navbar';
 import Content from './container/Content'; 
 import Dashboard from './container/Dashboard';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from './container/Footer';
+// import Contact from './container/ContactUs/Contact'; 
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           </aside>
           <main className="main-content">
             <Dashboard />
+            {/* <Contact /> */}
           </main>
         </div>
       </div>

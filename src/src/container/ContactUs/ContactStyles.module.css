@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  textarea,
+  input:not([type='submit']) {
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  textarea {
+    height: 150px;
+    padding-top: 16px;
+  }
+  
+  input,
+  textarea {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type='submit'] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  .inputField {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  @media (min-width: 800px) {
+    textarea,
+    input:not([type='submit']) {
+      width: 400px;
+    }
+    form {
+      gap: 40px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    textarea,
+    input:not([type='submit']) {
+      width: 600px;
+    }
+  }
+  

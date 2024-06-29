@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FcLike, FcLikePlaceholder } from "react-icons/fc"; 
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,7 +6,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import defaultImage from '../news-notdefined.jpeg';
 
 // const apiKey = '2dc470f354b04f61805a32777ff604b6';  //Anurag Api Key
-const apiKey = 'f81f4118de804985bce1e1bb2dde5984';
+// const apiKey = 'f81f4118de804985bce1e1bb2dde5984';
+const apiKey = 'b63b320651864d19809352d85179c59c'; // API Key (1)
+// const apiKey = '8a252f4420814646b42d71889446f512'; // API Key (2)
+// const apiKey = '27263c6b7b6549329d9a5f3a407f2f0a'; // API Key (3)
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('general');
