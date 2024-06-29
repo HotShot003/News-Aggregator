@@ -1,7 +1,8 @@
+// Navbar.js
 import React from "react";
 import logo from '../logo.png';
 import profileImage from '../profile.png';
-import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Navbar = () => {
     return (
@@ -16,6 +17,12 @@ const Navbar = () => {
                         <img src={profileImage} alt="Profile" className="w-full h-full object-cover"/>
                     </div>
                 </div>
+                {/* <div className="flex items-center space-x-6"> */}
+                    {/* <Link to="/contact" className="flex items-center"> Link to ContactUs page */}
+                        {/* <i className="bi bi-phone-fill"></i> */}
+                        {/* <span className="ml-2">Contact Us</span> */}
+                    {/* </Link> */}
+                {/* </div> */}
             </nav>
             <hr className="hr-custom"/>
         </div>
