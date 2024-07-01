@@ -9,7 +9,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_0gh6urm', 'template_o1r0jgf', form.current, 'XGoxQ9QRd6ix4N5sy')
+    emailjs.sendForm('service_c4fs5dj', 'template_1q1p6uq', form.current, 'bNphPVuMuzYLkPSKZ')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -55,7 +55,8 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            required></textarea>
+            required
+            ></textarea>
         </div>
         <input className="hover btn" type="submit" value="Submit" />
       </form>
